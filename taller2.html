@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Taller 2</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+<header id="box">
+<h1 class="titulomain">
+<span id="flash">ORDEN DE ALMUERZOS</span>
+
+</h1>
+</header>
+<form action="javascript:void(0);" class="demoForm" name="frmOrden" id="ordenForm">
+
+<fieldset>
+<h4 class="tt">Haz tu pedido</h4>
+<p>Tipo de combos
+<label><input type="radio" name="combo" value="7.25" checked="checked"
+/>Súper Combo</label>
+<label><input type="radio" name="combo" value="5.75" />Combo personal</label>
+<label><input type="radio" name="combo" value="3.50" />Combo infantil</label>
+<input type="hidden" name="tipo" value="0.00" />
+</p>
+<p id="extras"><label>Productos extra:</label>
+<label><input type="checkbox" name="Ensalada" value="1.50" />Ensalada</label>
+<label><input type="checkbox" name="Papa frita" value="1.25" />Papa frita</label>
+<label><input type="checkbox" name="Pieza grande  de pollo" value="1.75" />Pieza grande de pollo</label>
+<label><input type="checkbox" name="Pieza mediana de pollo" value="1.50" />Pieza mediana de pollo</label>
+<label><input type="checkbox" name="Pieza pequeña de pollo" value="1.25" />Pieza pequeña de pollo</label>
+<label><input type="checkbox" name="Bebida Grande" value="1.50" />Bebida grande</label>
+<label><input type="checkbox" name="Bebida Mediana" value="1.25" />Bebida mediana</label>
+<label><input type="checkbox" name="Bebida pequeña" value="1.00" />Bebida pequeña</label>
+<label><input type="checkbox" name="Café" value="0.50" />Café</label>
+<label><input type="checkbox" name="Postre" value="1.25" />Postre</label>
+<input type="hidden" name="nm_extra" value="0.00" />
+</p>
+<p>
+<label>
+Total: $<input type="text" name="total" class="num" value="0.00"
+readonly="readonly" />
+</label>
+</p>
+
+<p>
+	
+	<div class="com" id="areacomen" placeholder="Digite su comentario" onclick="mostrarcomen();">Comentarios o sugerencias:<textarea id="comments"></textarea></div>
+	
+	
+</p>
+
+<p>
+	<input type="submit" name="submit" id="mostrar" value="Enviar pedido" />
+</p>
+</fieldset>
+</form>
+
+<div id="costo">
+	
+</div>
+<script src="js/ordenar.js"></script>
+</body>
+</html>

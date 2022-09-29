@@ -1,0 +1,82 @@
+/* Estilos para el formulario de orden de pizza */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+body {
+    font: 16px/1.4 'Inter Tight', sans-serif;;
+}
+
+/* box ------------------------------------------------------ */
+#box {
+ background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: bold;
+
+}
+
+
+h1{
+  text-align:center;
+  font-size:4em;
+  margin:20px 0 20px 0;
+  color: blue;
+}
+
+ul {
+    margin:1.4em 0 2em;
+}
+
+ul li {
+    margin-bottom:.8em;
+    
+}
+
+form.demoForm fieldset {
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    width: 60%;
+}
+
+form.demoForm p {
+    line-height: 1.1;
+    padding:0 6px;
+}
+form.demoForm legend {
+    margin-left:6px;
+}
+
+form.demoForm label {
+    margin-right: .8em;
+}
+form.demoForm input {
+    vertical-align: bottom;
+    padding:0;
+    margin-right: 10px; /* needed for checkboxes */
+}
+form.demoForm input.num {
+    text-align: right;
+    width: 50px;
+}
+
+/* for ie8+ (wraps tightly) */
+form.demoForm input[type=submit] {
+    padding:1px 4px;
+}
+
+.com{
+    width: 100%;
+    border: solid 1px black;
+}
+
+
+h4{
+    text-align:center;
+  font-size:2em;
+}
+
+textarea{
+   
+    display: none;
+    width: 100%;
+}
